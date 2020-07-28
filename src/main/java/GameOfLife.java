@@ -15,7 +15,6 @@ public class GameOfLife{
                 neighbors -= grid[x][y];
                 //[full] <b>The rules of life!</b>
                 if ((grid[x][y] == 1) && (neighbors <  2)) next[x][y] = 0;
-                else if ((grid[x][y] == 1) && (neighbors <  2)) next[x][y] = 0;
                 else if ((grid[x][y] == 1) && (neighbors == 2 || neighbors == 3 )) next[x][y] = 1;
                 else if ((grid[x][y] == 1) && (neighbors >  3)) next[x][y] = 0;
                 else if ((grid[x][y] == 0) && (neighbors == 3)) next[x][y] = 1;
@@ -24,7 +23,7 @@ public class GameOfLife{
         }
         //[end]
         // The 2D array “next” is now the current board.
-        System.out.println("nextGeneration");
+        System.out.println("\n"+" nextGeneration ");
         for(int i = 0; i <columns;i++) {
             for (int j = 0; j < rows; j++) {
                 if (next[i][j] == 0){
@@ -55,7 +54,7 @@ public class GameOfLife{
                 {0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0},
         };
-        System.out.println("currentGeneration");
+        System.out.println("\n"+" currentGeneration  ");
        for(int i = 0; i <rows;i++) {
            for (int j = 0; j < columns; j++) {
                 if (grid[i][j] == 0){

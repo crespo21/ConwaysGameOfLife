@@ -4,6 +4,7 @@ public class GameOfLifeTest {
 
     @Test
     public void AnyLiveCellLessTwoNeighbors() {
+
         int[][] grid = {
                 {0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0},
